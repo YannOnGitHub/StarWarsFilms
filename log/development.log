@@ -52,3 +52,208 @@ Completed 200 OK in 22ms (Views: 19.9ms | ActiveRecord: 0.2ms)
   [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
   [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
   [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/articles" for 127.0.0.1 at 2018-05-27 19:48:31 +0200
+Started GET "/articles" for 127.0.0.1 at 2018-05-27 19:48:31 +0200
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as HTML
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (12.3ms)
+  Rendered articles/index.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 316ms (Views: 303.8ms | ActiveRecord: 0.1ms)
+
+
+Completed 200 OK in 312ms (Views: 306.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2018-05-27 19:48:33 +0200
+Processing by ArticlesController#index as HTML
+Started GET "/articles" for 127.0.0.1 at 2018-05-27 19:48:33 +0200
+  Rendering articles/index.html.erb within layouts/application
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (7.9ms)
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 31ms (Views: 28.1ms | ActiveRecord: 0.3ms)
+
+
+Completed 200 OK in 32ms (Views: 30.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2018-05-27 19:48:33 +0200
+Started GET "/articles" for 127.0.0.1 at 2018-05-27 19:48:33 +0200
+Processing by ArticlesController#index as HTML
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (2.0ms)
+  Rendered articles/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 23ms (Views: 19.3ms | ActiveRecord: 0.1ms)
+
+
+Completed 200 OK in 39ms (Views: 33.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/articles/1" for 127.0.0.1 at 2018-05-27 19:48:53 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 22ms (Views: 15.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles/1/edit" for 127.0.0.1 at 2018-05-27 19:48:55 +0200
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering articles/edit.html.erb within layouts/application
+  Rendered articles/edit.html.erb within layouts/application (69.2ms)
+Completed 200 OK in 98ms (Views: 88.9ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/articles/1" for 127.0.0.1 at 2018-05-27 19:49:54 +0200
+Processing by ArticlesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EvOj9qnaHVzcFaw7P08nlhn8pk2cltytyevLz/py/0dBiNwK4PbUJwV/GidP3rGagXORnLtNkN5/nGZQ5uhb2g==", "article"=>{"title"=>"Star Wars : The Force Awaken", "stars"=>"3", "content"=>"Plus de 30 ans après la bataille d'Endor, qui a vu la chute de l'Empire galactique, la paix et la nouvelle république sont encore fragiles. Les nostalgiques de l'ancien régime, rassemblés sous la bannière du Premier Ordre, tentent de reprendre la main sur la force. A leur tête, le sinistre Kylo Ren lance des attaques pirates aux confins de la galaxie."}, "commit"=>"Update Article", "id"=>"1"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mArticle Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "articles" WHERE "articles"."title" = ? AND ("articles"."id" != ?) LIMIT ?[0m  [["title", "Star Wars : The Force Awaken"], ["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (1.0ms)[0m  [1m[33mUPDATE "articles" SET "title" = ?, "stars" = ?, "content" = ?, "updated_at" = ? WHERE "articles"."id" = ?[0m  [["title", "Star Wars : The Force Awaken"], ["stars", 3], ["content", "Plus de 30 ans après la bataille d'Endor, qui a vu la chute de l'Empire galactique, la paix et la nouvelle république sont encore fragiles. Les nostalgiques de l'ancien régime, rassemblés sous la bannière du Premier Ordre, tentent de reprendre la main sur la force. A leur tête, le sinistre Kylo Ren lance des attaques pirates aux confins de la galaxie."], ["updated_at", "2018-05-27 17:49:54.553583"], ["id", 1]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/articles/1
+Completed 302 Found in 10ms (ActiveRecord: 3.0ms)
+
+
+Started GET "/articles/1" for 127.0.0.1 at 2018-05-27 19:49:54 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 19ms (Views: 16.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2018-05-27 19:49:55 +0200
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 22ms (Views: 18.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2018-05-27 19:49:57 +0200
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 24ms (Views: 20.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2018-05-27 19:50:15 +0200
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sYo1TVsA+IfQ0EGyPixWrK5+Dgo8S4rnMnrpCJbWB6yPbSFxmd/FD9iVF08QceRDZI0qKXMfSb1THvWpXZGBBA==", "article"=>{"title"=>"Rogue One: A Star Wars Story", "stars"=>"4", "content"=>"Dans une période de conflit, un groupe d'improbables héros s'unit pour voler les plans de l'Étoile de la Mort, l'arme de destruction massive de l'Empire. Ce tournant décisif dans la chronologie Star Wars réunit des personnes ordinaires qui choisissent de faire des choses extraordinaires, pour défendre une noble cause."}, "commit"=>"Create Article"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mArticle Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "articles" WHERE "articles"."title" = ? LIMIT ?[0m  [["title", "Rogue One: A Star Wars Story"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "articles" ("title", "content", "stars", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Rogue One: A Star Wars Story"], ["content", "Dans une période de conflit, un groupe d'improbables héros s'unit pour voler les plans de l'Étoile de la Mort, l'arme de destruction massive de l'Empire. Ce tournant décisif dans la chronologie Star Wars réunit des personnes ordinaires qui choisissent de faire des choses extraordinaires, pour défendre une noble cause."], ["stars", 4], ["created_at", "2018-05-27 17:50:15.345472"], ["updated_at", "2018-05-27 17:50:15.345472"]]
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/articles
+Completed 302 Found in 6ms (ActiveRecord: 2.5ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2018-05-27 19:50:15 +0200
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 18ms (Views: 16.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2018-05-27 19:50:17 +0200
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 27ms (Views: 23.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2018-05-27 19:50:39 +0200
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"u1g8JE1CvQYe/CMf3tFi4CyVyhPZVhrea1hCKe/xjXKFvygYj52Ajha5deLwjNAP5mbuMJYC2YQKPF6IJLYL2g==", "article"=>{"title"=>"Star Wars, épisode VIII : The Last Jedi", "stars"=>"4", "content"=>"Le Premier Ordre étend ses tentacules aux confins de l'univers, poussant la Résistance dans ses retranchements. Il est impossible de se sauver à la vitesse de la lumière avec cet ennemi continuellement aux trousses. Cela n'empêche pas Finn et ses camarades de tenter d'identifier une brèche chez leur adversaire. Pendant ce temps, Rey se trouve toujours sur la planète Ahch-To pour convaincre Luke Skywalker de lui enseigner les rudiments de la Force."}, "commit"=>"Create Article"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mArticle Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "articles" WHERE "articles"."title" = ? LIMIT ?[0m  [["title", "Star Wars, épisode VIII : The Last Jedi"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "articles" ("title", "content", "stars", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Star Wars, épisode VIII : The Last Jedi"], ["content", "Le Premier Ordre étend ses tentacules aux confins de l'univers, poussant la Résistance dans ses retranchements. Il est impossible de se sauver à la vitesse de la lumière avec cet ennemi continuellement aux trousses. Cela n'empêche pas Finn et ses camarades de tenter d'identifier une brèche chez leur adversaire. Pendant ce temps, Rey se trouve toujours sur la planète Ahch-To pour convaincre Luke Skywalker de lui enseigner les rudiments de la Force."], ["stars", 4], ["created_at", "2018-05-27 17:50:39.509672"], ["updated_at", "2018-05-27 17:50:39.509672"]]
+  [1m[35m (2.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/articles
+Completed 302 Found in 6ms (ActiveRecord: 2.9ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2018-05-27 19:50:39 +0200
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 17ms (Views: 14.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2018-05-27 19:50:41 +0200
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 28ms (Views: 23.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2018-05-27 19:50:47 +0200
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"apOz7ZKlM5HIX1BubLWyH+wlQTAiwZadzyIKv0snFEJUdKfRUHoOGcAaBpNC6ADwJtZlE22VVceuRhYegGCS6g==", "article"=>{"title"=>"Solo: A Star Wars Story", "stars"=>"2", "content"=>""}, "commit"=>"Create Article"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mArticle Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "articles" WHERE "articles"."title" = ? LIMIT ?[0m  [["title", "Solo: A Star Wars Story"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Redirected to http://localhost:3000/articles
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2018-05-27 19:50:47 +0200
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 18ms (Views: 16.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2018-05-27 19:50:49 +0200
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 24ms (Views: 21.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2018-05-27 19:51:04 +0200
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oZn0kQV3WPyzKc/ExaM3e8dkXuuazpvOzDH+DzHgWYiffuCtx6hldLtsmTnr/oWUDZd6yNWaWJStVeKu+qffIA==", "article"=>{"title"=>"Solo: A Star Wars Story", "stars"=>"2", "content"=>"Embarquez à bord du Faucon Millenium et partez à l’aventure en compagnie du plus célèbre vaurien de la galaxie. Au cours de périlleuses aventures dans les bas-fonds d’un monde criminel, Han Solo va faire la connaissance de son imposant futur copilote Chewbacca et croiser la route du charmant escroc Lando Calrissian… Ce voyage initiatique révèlera la personnalité d’un des héros les plus marquants de la saga Star Wars."}, "commit"=>"Create Article"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mArticle Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "articles" WHERE "articles"."title" = ? LIMIT ?[0m  [["title", "Solo: A Star Wars Story"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "articles" ("title", "content", "stars", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Solo: A Star Wars Story"], ["content", "Embarquez à bord du Faucon Millenium et partez à l’aventure en compagnie du plus célèbre vaurien de la galaxie. Au cours de périlleuses aventures dans les bas-fonds d’un monde criminel, Han Solo va faire la connaissance de son imposant futur copilote Chewbacca et croiser la route du charmant escroc Lando Calrissian… Ce voyage initiatique révèlera la personnalité d’un des héros les plus marquants de la saga Star Wars."], ["stars", 2], ["created_at", "2018-05-27 17:51:04.696700"], ["updated_at", "2018-05-27 17:51:04.696700"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/articles
+Completed 302 Found in 5ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2018-05-27 19:51:04 +0200
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 19ms (Views: 16.9ms | ActiveRecord: 0.2ms)
+
+
